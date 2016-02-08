@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Success Page</title>
+      <meta name="description" content="WS">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   </head>
+<body>
+  <p id='greenbox'>The email address you entered {{session['email']}} is a VALID email address!  Thank you!</p>
+  <p id='entered'>Email Addresses Entered:</p>
+  {% for emailnew in newemail: %}
+    <p>{{emailnew['email']}}  {{updated_at['updated_at']}}</p>
+    <hr>
+  {% endfor %}
+  
+  {% for dictionary in session['activities'] %}
+          <p>{{dictionary['message']}} </p>
+  {% endfor %}
+
+</body>
+</html>

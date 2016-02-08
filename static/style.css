@@ -1,0 +1,13 @@
+* {
+	font-family: arial, sans-serif;
+	font-size: 9pt;
+}
+
+#greenbox{
+	background-color: green;
+	width: 300px;
+	height: 30px;
+	outline-style: medium;
+	outline-width: 2px;
+	
+}
